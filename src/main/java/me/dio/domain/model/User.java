@@ -14,7 +14,7 @@ public class User {
     private String name;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private Account acount;
+    private Account account;
 
     @OneToOne(cascade = CascadeType.ALL)
     private Card card;
@@ -41,12 +41,12 @@ public class User {
         this.name = name;
     }
 
-    public Account getAcount() {
-        return acount;
+    public Account getAccount() {
+        return account;
     }
 
-    public void setAcount(Account acount) {
-        this.acount = acount;
+    public void setAccount(Account account) {
+        this.account = account;
     }
 
     public Card getCard() {
